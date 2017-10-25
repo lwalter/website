@@ -18,34 +18,41 @@
     <meta property="article:author" content="Luke Walter">
 
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../css/index.css" rel="stylesheet">
 </head>
-<body class="body">
-    <div class="centered flex-container">
-        <a href="./index.html">
-            <div class="link-paper"><h3 class="center-text">Luke Walter</h3></div>
-        </a>
-        <div class="flex margin-left-15">
-            <a href="./projects.html" class="margin-left-5">
-                <div class="link-paper"><h3 class="center-text">Projects</h3></div>
-            </a>
-            <a href="./resume.html" class="margin-left-5">
-                <div class="link-paper"><h3 class="center-text">Resume</h3></div>
-            </a>
-        </div>
+<body class="flex column">
+    <div class="flex row space-between-justify">
+        <a class="margin-5" href="./index.html"><span>Home</span></a>
+        <a class="margin-5" href="./projects.html"><span>Projects</span></a>
+        <a class="margin-5" href="./resume.html"><span>Resume</span></a>
     </div>
-    <div class="centered flex-container padding-5">
-        <div class="flex flex-column">
-            <img src="../assets/me.png" alt="Me" />
-            <div class="flex flex-center padding-5">
-                <a href="https://github.com/lwalter" target="_blank"><img class="img-link" src="../assets/github.png" alt="My Github" /></a>
-                <a href="https://www.linkedin.com/in/lucas-walter" target="_blank"><img class="img-link" src="../assets/linkedin.png" alt="My LinkedIn" /></a>
-            </div>
-        </div>
-        <div class="flex flex-column margin-left-15">
+
+    <div class="flex column center-align">
+        <h2>Luke Walter</h2>
+        <img src="../assets/me.png" alt="Me" />
+    </div>
+
+    <div class="flex column">
+        <div class="flex row center-align">
+            <i class="material-icons chevron">chevron_right</i>
             <p>Software engineer with Tyler Technologies writing software for the public sector</p>
+        </div>
+        <div class="flex row center-align">
+            <i class="material-icons chevron">chevron_right</i>
             <p>Seattle, WA</p>
+        </div>
+        <div class="flex row center-align">
+            <i class="material-icons chevron">chevron_right</i>
             <p>C#, Typescript, Javascript, Elixir</p>
+        </div>
+        <div class="flex row center-justify center-align">
+            <a class="margin-5" href="https://github.com/lwalter" target="_blank">
+                <img src="../assets/github.png" alt="My Github" />
+            </a>
+            <a class="margin-5" href="https://www.linkedin.com/in/lucas-walter" target="_blank">
+                <img src="../assets/linkedin.png" alt="My LinkedIn" />
+            </a>
         </div>
     </div>
 </body>
