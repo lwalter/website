@@ -21,38 +21,54 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../css/index.css" rel="stylesheet">
 </head>
-<body class="flex column">
-    <div class="flex row space-between-justify">
-        <a class="margin-5" href="./index.html"><span>Home</span></a>
-        <a class="margin-5" href="./projects.html"><span>Projects</span></a>
-        <a class="margin-5" href="./resume.html"><span>Resume</span></a>
-    </div>
-
-    <div class="flex column center-align">
-        <h2>Luke Walter</h2>
-        <img src="../assets/me.png" alt="Me" />
-    </div>
-
-    <div class="flex column">
-        <div class="flex row center-align">
-            <i class="material-icons chevron">chevron_right</i>
-            <p>Software engineer with Tyler Technologies writing software for the public sector</p>
-        </div>
-        <div class="flex row center-align">
-            <i class="material-icons chevron">chevron_right</i>
-            <p>Seattle, WA</p>
-        </div>
-        <div class="flex row center-align">
-            <i class="material-icons chevron">chevron_right</i>
-            <p>C#, Typescript, Javascript, Elixir</p>
-        </div>
-        <div class="flex row center-justify center-align">
-            <a class="margin-5" href="https://github.com/lwalter" target="_blank">
-                <img src="../assets/github.png" alt="My Github" />
-            </a>
-            <a class="margin-5" href="https://www.linkedin.com/in/lucas-walter" target="_blank">
-                <img src="../assets/linkedin.png" alt="My LinkedIn" />
-            </a>
+<body class="flex column center-align">
+    <div style="max-width:650px;">
+        <div class="flex row space-between-justify">
+                <a class="margin-5" href="./index.html"><span>Home</span></a>
+                <a class="margin-5" href="./projects.html"><span>Projects</span></a>
+                <a class="margin-5" href="./resume.html"><span>Resume</span></a>
+            </div>
+        
+            <div class="flex column row-gte-750" style="margin-top: 15px;">
+                <div class="flex column center-align">
+                    <h2>Luke Walter</h2>
+                    <img src="../assets/me.png" alt="Me" />
+                    <div class="flex row center-justify center-align margin-top-20 hide-lte-749">
+                        <a class="margin-5" href="https://github.com/lwalter" target="_blank">
+                            <img src="../assets/github.png" alt="My Github" />
+                        </a>
+                        <a class="margin-5" href="https://www.linkedin.com/in/lucas-walter" target="_blank">
+                            <img src="../assets/linkedin.png" alt="My LinkedIn" />
+                        </a>
+                    </div>
+                </div>
+            
+                <div class="flex column space-between-justify-gte-750">
+                    <div>
+                        <div class="flex row center-align">
+                            <i class="material-icons chevron">chevron_right</i>
+                            <p>Software engineer with Tyler Technologies writing software for the public sector</p>
+                        </div>
+                        <div class="flex row center-align">
+                            <i class="material-icons chevron">chevron_right</i>
+                            <p>Seattle, WA</p>
+                        </div>
+                        <div class="flex row center-align">
+                            <i class="material-icons chevron">chevron_right</i>
+                            <p>C#, Typescript, Javascript, Elixir</p>
+                        </div>
+                    </div>
+                   
+                    <div class="flex row center-justify center-align hide-gte-750">
+                        <a class="margin-5" href="https://github.com/lwalter" target="_blank">
+                            <img src="../assets/github.png" alt="My Github" />
+                        </a>
+                        <a class="margin-5" href="https://www.linkedin.com/in/lucas-walter" target="_blank">
+                            <img src="../assets/linkedin.png" alt="My LinkedIn" />
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
