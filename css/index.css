@@ -7,7 +7,7 @@
 body {
     font-family: 'Lato', sans-serif;
     background-color: #e6e7e9;
-    font-size: 100%;
+    font-size: 110%;
     color: #3a5461;
 }
 
@@ -65,4 +65,33 @@ body {
     .hide-lte-749 {
         display: none !important;
     }
+}
+
+.link-box {
+    border: solid #131a2c 1px;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    -webkit-box-shadow: 0 0px 0px 0px #797979;
+    box-shadow: 0 0px 0px 0px #797979;
+    text-align: center;
+}
+
+a.link-box {
+    text-decoration: none;
+}
+
+.link-box:hover {
+    -webkit-box-shadow: 0 9px 18px 0px #999;
+    box-shadow: 0 9px 18px 0px #999;
+}
+
+a.icon {
+    opacity: .5;
+    transition: opacity .5s ease-in;
+}
+
+a.icon:hover {
+    opacity: 1;
+    
 }
