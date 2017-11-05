@@ -1,8 +1,8 @@
 My web site content
 
 # TODO
-- [ ] Home page
-    - [ ] Icon link design
+- [x] Home page
+    - [x] Icon link design
     - [x] Desktop view
     - [x] About me design
 - [x] Image
