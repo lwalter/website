@@ -1,0 +1,27 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "My web site content",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node node_modules/gulp/bin/gulp.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwalter/website.git"
+  },
+  "author": "Luke Walter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lwalter/website/issues"
+  },
+  "homepage": "https://github.com/lwalter/website#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-hash": "^4.2.2",
+    "gulp-html-replace": "^1.6.2"
+  }
+}

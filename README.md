@@ -9,5 +9,5 @@ My web site content
 - [x] Github and LinkedIn links
 - [x] Mobile
 - [ ] Favicon
-- [ ] Bundling/minifying
+- [x] Bundling/minifying
 - [ ] Deploy
