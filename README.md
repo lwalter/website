@@ -9,5 +9,6 @@ My web site content
 - [x] Github and LinkedIn links
 - [x] Mobile
 - [ ] Favicon
-- [x] Bundling/minifying
-- [ ] Deploy
+- [x] Bundling/minifying (switch to webpack?)
+- [ ] Deploy scripts
+- [x] Postcss (autoprefixing)

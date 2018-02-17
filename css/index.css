@@ -43,7 +43,7 @@ body {
     margin-top: 20px;
 }
 
-.chevron {
+.chevron-color {
     color: #131a2c;
 }
 
@@ -58,6 +58,10 @@ body {
 
     .hide-gte-750 {
         display: none !important;
+    }
+
+    .margin-l-gte-750 {
+        margin-left: 100px;
     }
 }
 

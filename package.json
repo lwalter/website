@@ -18,10 +18,12 @@
   },
   "homepage": "https://github.com/lwalter/website#readme",
   "devDependencies": {
+    "autoprefixer": "^8.0.0",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.2",
     "gulp-hash": "^4.2.2",
-    "gulp-html-replace": "^1.6.2"
+    "gulp-html-replace": "^1.6.2",
+    "gulp-postcss": "^7.0.1"
   }
 }
