@@ -22,15 +22,24 @@
 
     <link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.css" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- build:css -->
     <link href="../css/index.css" rel="stylesheet">
     <!-- endbuild -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114655297-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-114655297-1');
+    </script>
+
 </head>
 <body class="flex column center-align">
     <div style="max-width:1150px;width:100%;margin-top:25px;">
-        <div class="flex column row-gte-750">
+        <div class="flex column row-gte-750" style="margin-left:15px;margin-right:15px;">
             <div class="flex column">
                 <!-- build:me -->
                 <img class="hide-lte-749" style="align-self:center;" src="../assets/me-rect.png" alt="Me" />
