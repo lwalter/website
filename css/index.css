@@ -6,9 +6,21 @@
 
 body {
     font-family: monospace;
-    background-color: #e6e7e9;
+    background-color: #2a2c34;
     font-size: 110%;
-    color: #3a5461;
+    color: #8d93b5;
+}
+
+.grey {
+    color: #8d93b5
+}
+
+.green {
+    color: #a0c284
+}
+
+.white {
+    color: #e0e6ff
 }
 
 .flex {
@@ -43,8 +55,9 @@ body {
     margin-top: 20px;
 }
 
-.chevron-color {
-    color: #131a2c;
+.chevron {
+    color: #a0c284;
+    margin-left: -6px;
 }
 
 @media screen and (min-width:750px) {
@@ -68,6 +81,10 @@ body {
 @media screen and (max-width:749px) {
     .hide-lte-749 {
         display: none !important;
+    }
+
+    .align-bottom-lte-749 {
+        order: 2;
     }
 }
 
@@ -98,4 +115,67 @@ a.icon {
 a.icon:hover {
     opacity: 1;
     
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 5px solid;
+    margin: 1em 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+  color: #8d93b5;
+}
+
+a:visited {
+  color: #8d93b5;
+}
+
+a:hover {
+  color: #a0c284;
+}
+
+a:active {
+  color: #a0c284;
+}
+
+.blinking {
+    display: inline-block;
+    width: 15px;
+    height: 2em;
+    background-color: #a0c284;
+    -webkit-animation: blinking 2s infinite;
+    animation: blinking 2s infinite;
+}
+
+@keyframes blinking {
+    0% {
+        background-color: transparent;
+    }
+    49% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: #a0c284;
+    }
+}
+
+h1 {
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+}
+h2 {
+    margin-block-start: .5em;
+    margin-block-end: .5em;
+}
+h3 {
+    margin-block-start: .5em;
+    margin-block-end: .5em;
 }

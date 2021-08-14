@@ -20,10 +20,13 @@
   "devDependencies": {
     "autoprefixer": "^8.0.0",
     "del": "^3.0.0",
+    "glob-parent": ">=5.1.2",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.2",
     "gulp-hash": "^4.2.2",
     "gulp-html-replace": "^1.6.2",
-    "gulp-postcss": "^7.0.1"
+    "gulp-postcss": "^7.0.1",
+    "lodash": ">=4.17.21",
+    "lodash.template": ">=4.5.0"
   }
 }

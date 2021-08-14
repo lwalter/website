@@ -27,67 +27,92 @@
     <link href="../css/index.css" rel="stylesheet">
     <!-- endbuild -->
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114655297-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-114655297-1');
-    </script>
-
 </head>
 <body class="flex column center-align">
-    <div style="max-width:1150px;width:100%;margin-top:25px;">
+    <div style="max-width:75%;width:100%;margin-top:25px;">
         <div class="flex column row-gte-750" style="margin-left:15px;margin-right:15px;">
-            <div class="flex column">
+            <div class="flex column align-bottom-lte-749">
                 <!-- build:me -->
-                <img class="hide-lte-749" style="align-self:center;" src="../assets/me-rect.png" alt="Me" />
+                <img class="hide-lte-749" style="border:5px solid #a0c284;align-self:center;" src="../assets/me-1.jpg" alt="Me" />
                 <!-- endbuild -->
-                <h2>Luke Walter</h2>
-                <p>Software engineer working at Tyler Technologies writing software for the public sector</p>
-                <p>Seattle, WA</p>
                 <div class="flex row center-align margin-top-20">
                     <a class="icon margin-5" href="https://github.com/lwalter" target="_blank">
                         <!-- build:ghImg -->
-                        <img src="../assets/github.png" alt="My Github" />
+                        <img src="../assets/github-green.png" alt="My Github" />
                         <!-- endbuild -->
                     </a>
                     <a class="icon margin-5" href="https://www.linkedin.com/in/lucas-walter" target="_blank">
                         <!-- build:liImg -->
-                        <img src="../assets/linkedin.png" alt="My LinkedIn" />
+                        <img src="../assets/linkedin-green.png" alt="My LinkedIn" />
                         <!-- endbuild -->
                     </a>
                 </div>
             </div>
             <div class="flex column space-between-justify-gte-750 margin-l-gte-750">
-                <h2>Readme</h2>
-                <h3>C#</h3>
+                <div class="flex row">
+                    <h1 class="green small-margin">Luke Walter</h1>
+                    <div class="blinking" style="align-self:center;margin-left:5px;"></div>
+                </div>
+                <h3 class="small-margin">Software Engineer <span>&#8226</span> <a href="https://extrahop.com" target="_blank">ExtraHop</a></h3>
+                <hr class="green small-margin"/>
+                <h1 class="white">README</h1>
+                <h3>EDEN: ExtraHop Deployment Environment Next</h3>
                 <div class="flex row center-align">
-                    <i class="material-icons chevron-color">chevron_right</i>
-                    <p>Built RESTful APIs, RabbitMQ message subscribers/publishers, and webhook event services within a microservice oriented system</p>
+                    <i class="material-icons chevron">chevron_right</i>
+                    <p>Cloud based virtual machine deployment application that enables product engineering, test automation, and others the capability to easily create on-demand environments</p>
                 </div>
                 <div class="flex row center-align">
-                    <i class="material-icons chevron-color">chevron_right</i>
-                    <p>Enabled other applications, services, and users to interact with accounts receivable bill data, initiate/capture payments, and post payment notifications</p>
+                    <i class="material-icons chevron">chevron_right</i>
+                    <p>Lead project in architecture, development, and program management</p>
                 </div>
-                <h3>Typescript, Javascript, AngularJS and Material Design</h3>
+                <h3>Reveal(x) Cloud Deployment</h3>
                 <div class="flex row center-align">
-                    <i class="material-icons chevron-color">chevron_right</i>
-                    <p>Constructed beautiful and usable browser based user interfaces adhering to a common user experience for a multitude of products</p>
-                </div>
-                <div class="flex row center-align">
-                    <i class="material-icons chevron-color">chevron_right</i>
-                    <p>Ensured support for many device form factors by applying responsive design</p>
-                </div>
-                <h3>TeamCity, git, Powershell</h3>
-                <div class="flex row center-align">
-                    <i class="material-icons chevron-color">chevron_right</i>
-                    <p>Developed continuous integration and delivery pipeline for internal development, quality assurance, and demonstration environments</p>
+                    <i class="material-icons chevron">chevron_right</i>
+                    <p>Infrastructure and product deployment automation for delivering ExtraHop products as a SaaS offering in AWS</p>
                 </div>
                 <div class="flex row center-align">
-                    <i class="material-icons chevron-color">chevron_right</i>
-                    <p>Leveraged Powershell and remote execution to deploy TeamCity build artifacts to target environments</p>
+                    <i class="material-icons chevron">chevron_right</i>
+                    <p>Worked closely in a fast paced, small engineering team that delivered the solution to market in four months</p>
+                </div>
+                <h3>Performance Testing and Tools</h3>
+                <div class="flex row center-align">
+                    <i class="material-icons chevron">chevron_right</i>
+                    <p>Develop and maintain existing automation to test the performance of various ExtraHop products</p>
+                </div>
+                <div class="flex row center-align">
+                    <i class="material-icons chevron">chevron_right</i>
+                    <p>Worked cross-functionally to determine expected levels of performance and mitigate potential degradation as a result of new features</p>
+                </div>
+                <div class="flex row center-align">
+                    <i class="material-icons chevron">chevron_right</i>
+                    <p>Implement tools to generate a multitude of network traffic profiles to facilitate stressing various features of the product</p>
+                </div>
+                <h3>SSO Identity Provider</h3>
+                <div class="flex row center-align">
+                    <i class="material-icons chevron">chevron_right</i>
+                    <p>Comprehensive token based authentication and identity management solution supporting OAuth 2.0, OIDC, and JWT.
+                </div>
+                <h3>Electronic bill presentment and payment</h3>
+                <div class="flex row center-align">
+                    <i class="material-icons chevron">chevron_right</i>
+                    <p>Web application, REST APIs, event publishers/subscribers and webhook event services to provide bill presentment and payment within a micro-servives oriented environment</>
+                </div>
+                <h3>Technologies</h3>
+                <div class="flex row center-align">
+                    <i class="material-icons chevron">chevron_right</i>
+                    <p><b>Languages:</b> Python, Golang, Javascript, C#, Typescript, SQL, HTML, CSS, Bash</p>
+                </div>
+                <div class="flex row center-align">
+                    <i class="material-icons chevron">chevron_right</i>
+                    <p><b>Technologies:</b> Django, Django REST API, Celery, Terraform, Flask, AngularJS, ASP.NET Web API, Redis, RabbitMQ, Docker, Kubernetes</p>
+                </div>
+                <div class="flex row center-align">
+                    <i class="material-icons chevron">chevron_right</i>
+                    <p><b>Databases:</b> PostgreSQL, MS SQL Server<p>
+                </div>
+                <div class="flex row center-align">
+                    <i class="material-icons chevron">chevron_right</i>
+                    <p><b>Cloud:</b> AWS VPC, EC2, EKS, S3, RDS, IAM, ECR</p>
                 </div>
             </div>
         </div>

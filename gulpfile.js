@@ -1,4 +1,4 @@
-const gulp = require('gulp');
+const { series, src, dest } = require('gulp');
 const cleanCSS = require('gulp-clean-css');
 const hash = require('gulp-hash');
 const del = require('del');
@@ -8,53 +8,48 @@ const autoprefixer = require('autoprefixer');
 
 const distPath = 'dist';
 
-gulp.task('clean-dist', () => {
+function cleanDist() {
     return del(`${distPath}/**`);
-});
+}
 
 let hashedCSSFilename = "";
-gulp.task('minify-css', ['clean-dist'], (cb) => {
+function minifyCSS() {
     const prefixConfig = {
         browsers: ['last 2 version']
     };
     const prefixPlugins = [
         autoprefixer(prefixConfig)
     ];
-    return gulp.src('css/*.css')
+    return src('css/*.css')
         .pipe(postcss(prefixPlugins))
         .pipe(hash())
         .pipe(cleanCSS({compatibility: 'ie8'}, (details) => {
             hashedCSSFilename = details.name;
-            console.log(`Emitted file: ${hashedCSSFilename
-        }`);
+            console.log(`Emitted file: ${hashedCSSFilename}`);
         }))
-        .pipe(gulp.dest(distPath));
-});
-
-gulp.task('emit-imgs', () => {
-    return gulp.src('assets/*.png')
-        .pipe(gulp.dest(distPath));
-});
-
-gulp.task('emit-html', ['minify-css', 'emit-imgs'], () => {
-    return gulp.src('html/*.html')
+        .pipe(dest(distPath));
+}
+function emitImgs() {
+    return src('assets/*')
+        .pipe(dest(distPath));
+}
+function emitHTML(cb) {
+    return src('html/*.html')
         .pipe(htmlreplace({
-            css: hashedCSSFilename
-        ,
+            css: hashedCSSFilename,
             ghImg: {
-                src: 'github.png',
+                src: 'github-green.png',
                 tpl: '<img src="%s" alt="My Github" />'
             },
             liImg: {
-                src: 'linkedin.png',
+                src: 'linkedin-green.png',
                 tpl: '<img src="%s" alt="My LinkedIn" />'
             },
             me: {
-                src: 'me-rect.png',
+                src: 'me-1.jpg',
                 tpl: '<img class="hide-lte-749" style="align-self:center;" src="%s" alt="Me" />'
             }
         }))
-        .pipe(gulp.dest(distPath));
-});
-
-gulp.task('default', ['emit-html'])
+        .pipe(dest(distPath));
+}
+exports.default = series(cleanDist, minifyCSS, emitImgs, emitHTML);
