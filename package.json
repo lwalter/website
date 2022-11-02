@@ -21,7 +21,7 @@
     "autoprefixer": "^8.0.0",
     "del": "^3.0.0",
     "glob-parent": ">=5.1.2",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-clean-css": "^3.9.2",
     "gulp-hash": "^4.2.2",
     "gulp-html-replace": "^1.6.2",
